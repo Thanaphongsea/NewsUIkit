@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import UIKit
+
+class NewsTableViewCellViewModel {
+    let title: String
+    let subtitle: String
+    let imageURl: URL?
+    var imageData: Data? = nil
+    
+    init(title: String, subtitle: String, imageURl: URL?) {
+        self.title = title
+        self.subtitle = subtitle
+        self.imageURl = imageURl
+    }
+    
+}
